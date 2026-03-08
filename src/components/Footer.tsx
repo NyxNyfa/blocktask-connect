@@ -15,7 +15,9 @@ const Footer = () => {
             <a href="#" className="hover:text-foreground transition-colors">Terms</a>
             <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
             <a href="#" className="hover:text-foreground transition-colors">Smart Contract Audit</a>
-            <a href="#" className="hover:text-foreground transition-colors">GitHub</a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Instagram</a>
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">X</a>
+            <a href="mailto:contact@example.com" className="hover:text-foreground transition-colors">Email</a>
           </div>
           <p className="text-xs text-muted-foreground">
             © 2026 FreeWork Chain Decentralized Protocol.

@@ -18,7 +18,7 @@ const Footer = () => {
             <a href="#" className="hover:text-foreground transition-colors">GitHub</a>
           </div>
           <p className="text-xs text-muted-foreground">
-            © 2026 BlockTask Decentralized Protocol.
+            © 2026 FreeWork Chain Decentralized Protocol.
           </p>
         </div>
       </div>

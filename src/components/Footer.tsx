@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="flex items-center gap-2">
             <Boxes className="h-5 w-5 text-primary" />
             <span className="font-semibold">
-              Block<span className="gradient-text">Task</span>
+              Free<span className="gradient-text">Work Chain</span>
             </span>
           </div>
           <div className="flex gap-6 text-sm text-muted-foreground">
@@ -18,7 +18,7 @@ const Footer = () => {
             <a href="#" className="hover:text-foreground transition-colors">GitHub</a>
           </div>
           <p className="text-xs text-muted-foreground">
-            © 2026 BlockTask Decentralized Protocol.
+            © 2026 FreeWork Chain Decentralized Protocol.
           </p>
         </div>
       </div>

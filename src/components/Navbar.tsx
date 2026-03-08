@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="flex items-center gap-2">
           <Boxes className="h-7 w-7 text-primary" />
           <span className="text-xl font-bold tracking-tight">
-            Block<span className="gradient-text">Task</span>
+            Free<span className="gradient-text">Work Chain</span>
           </span>
         </div>
 

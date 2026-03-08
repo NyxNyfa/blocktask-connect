@@ -37,7 +37,7 @@ const Navbar = () => {
           {connected ? (
             <span className="flex items-center gap-2">
               <span className="text-muted-foreground">0x...4A2b</span>
-              <span className="rounded-full bg-accent/20 px-2 py-0.5 text-xs font-semibold text-accent">150 USDC</span>
+              <span className="rounded-full bg-primary/20 px-2 py-0.5 text-xs font-semibold text-primary">150 USDC</span>
             </span>
           ) : (
             "Connect Wallet"

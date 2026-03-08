@@ -1,4 +1,4 @@
-import { Boxes } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2">
-            <Boxes className="h-5 w-5 text-primary" />
+            <img src={logo} alt="FreeWork Chain" className="h-6 w-auto" />
             <span className="font-semibold">
               Free<span className="gradient-text">Work Chain</span>
             </span>

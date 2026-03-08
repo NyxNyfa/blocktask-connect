@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Search, Boxes, Wallet } from "lucide-react";
+import { Search, Wallet } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [connected, setConnected] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <Boxes className="h-7 w-7 text-primary" />
+          <img src={logo} alt="FreeWork Chain" className="h-8 w-auto" />
           <span className="text-xl font-bold tracking-tight">
             Free<span className="gradient-text">Work Chain</span>
           </span>

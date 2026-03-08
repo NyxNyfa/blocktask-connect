@@ -2,17 +2,17 @@ import { ShieldCheck, Clock, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const badges = [
-  { label: "DeFi UI Built", color: "from-purple-500 to-blue-500" },
-  { label: "10+ Contracts Deployed", color: "from-emerald-500 to-cyan-500" },
-  { label: "Superteam Verified", color: "from-pink-500 to-orange-500" },
-  { label: "Hackathon Winner", color: "from-yellow-500 to-red-500" },
+  { label: "DeFi UI Built" },
+  { label: "10+ Contracts Deployed" },
+  { label: "Superteam Verified" },
+  { label: "Hackathon Winner" },
 ];
 
 const FreelancerProfile = () => {
   return (
     <section id="profile" className="container mx-auto px-4 py-20">
       <h2 className="text-3xl font-bold mb-8">
-        Freelancer <span className="gradient-text">Profile</span>
+        Freelancer <span className="text-primary">Profile</span>
       </h2>
 
       <div className="grid lg:grid-cols-3 gap-8">
@@ -20,17 +20,17 @@ const FreelancerProfile = () => {
         <div className="lg:col-span-2 space-y-8">
           {/* Header */}
           <div className="flex items-start gap-5">
-            <div className="h-20 w-20 rounded-2xl gradient-bg flex items-center justify-center text-2xl font-bold text-primary-foreground shrink-0">
+            <div className="h-20 w-20 rounded-2xl bg-primary flex items-center justify-center text-2xl font-bold text-primary-foreground shrink-0">
               0x
             </div>
             <div>
               <div className="flex items-center gap-2">
                 <h3 className="text-xl font-bold text-foreground">@0xAuditor</h3>
-                <ShieldCheck className="h-5 w-5 text-accent" />
+                <ShieldCheck className="h-5 w-5 text-primary" />
               </div>
               <p className="text-muted-foreground mt-1">Senior Rust Dev | 3x Hackathon Winner</p>
               <div className="flex items-center gap-1 mt-2 text-sm">
-                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                <Star className="h-4 w-4 fill-primary text-primary" />
                 <span className="text-foreground font-medium">4.9</span>
                 <span className="text-muted-foreground">(127 reviews)</span>
               </div>
@@ -43,8 +43,8 @@ const FreelancerProfile = () => {
             <div className="flex flex-wrap gap-4">
               {badges.map((badge) => (
                 <div key={badge.label} className="flex flex-col items-center gap-2">
-                  <div className={`sbt-badge h-20 w-20 bg-gradient-to-br ${badge.color} flex items-center justify-center opacity-90`}>
-                    <ShieldCheck className="h-6 w-6 text-primary-foreground" />
+                  <div className="sbt-badge h-20 w-20 bg-primary/20 border border-primary/30 flex items-center justify-center">
+                    <ShieldCheck className="h-6 w-6 text-primary" />
                   </div>
                   <span className="text-xs text-muted-foreground text-center max-w-[80px]">{badge.label}</span>
                 </div>
@@ -79,9 +79,9 @@ const FreelancerProfile = () => {
               <span>3 Days Delivery</span>
             </div>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li className="flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-accent" /> Full security audit report</li>
-              <li className="flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-accent" /> Inline code annotations</li>
-              <li className="flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-accent" /> Post-fix review included</li>
+              <li className="flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-primary" /> Full security audit report</li>
+              <li className="flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-primary" /> Inline code annotations</li>
+              <li className="flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-primary" /> Post-fix review included</li>
             </ul>
             <Button variant="gradient" className="w-full" size="lg">
               Fund Escrow & Hire

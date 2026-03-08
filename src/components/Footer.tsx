@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="flex items-center gap-2">
             <Boxes className="h-5 w-5 text-primary" />
             <span className="font-semibold">
-              Block<span className="gradient-text">Task</span>
+              Free<span className="gradient-text">Work Chain</span>
             </span>
           </div>
           <div className="flex gap-6 text-sm text-muted-foreground">

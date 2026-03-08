@@ -1,4 +1,4 @@
-import { Boxes } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (

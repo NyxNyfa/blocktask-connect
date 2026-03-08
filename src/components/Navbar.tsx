@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Search, Boxes, Wallet } from "lucide-react";
+import { Search, Wallet } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [connected, setConnected] = useState(false);

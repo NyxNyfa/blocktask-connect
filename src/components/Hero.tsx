@@ -1,7 +1,9 @@
 import { ArrowRight, Wallet } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useWallet } from "@/web3/useWallet";
 
 const Hero = () => {
+  const { wallet, connect, disconnect } = useWallet();
   return (
     <section className="relative overflow-hidden">
       <div className="hero-glow absolute inset-0" />
@@ -20,8 +22,13 @@ const Hero = () => {
             <Button variant="gradient" size="lg" className="gap-2">
               Explore Gigs <ArrowRight className="h-4 w-4" />
             </Button>
-            <Button variant="gradient-outline" size="lg" className="gap-2">
-              <Wallet className="h-4 w-4" /> Connect Wallet
+            <Button
+              variant="gradient-outline"
+              size="lg"
+              className="gap-2"
+              onClick={() => (wallet.connected ? disconnect() : connect())}
+            >
+              <Wallet className="h-4 w-4" /> {wallet.connected ? "Disconnect" : "Connect Wallet"}
             </Button>
           </div>
           <div className="flex justify-center gap-8 pt-8 text-sm text-muted-foreground">
